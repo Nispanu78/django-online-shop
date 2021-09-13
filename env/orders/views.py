@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from cart.cart import Cart
 from .models import OrderItem
 from .forms import OrderCreateForm
-# from .tasks import order_created
+from .tasks import order_created
 
 
 def order_create(request):
